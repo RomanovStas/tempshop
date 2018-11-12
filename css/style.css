@@ -60,6 +60,7 @@ main,
 .head-info {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	font-size: 12px;
 	padding: 20px 0;
 }
@@ -67,19 +68,20 @@ main,
 .head-info__text {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .head-info__text a:first-of-type {
 	margin-right: 20px;
 }
 .mail-info__ico {
-	display: block;
+	display: inline-block;
 	background: url('../img/Mail_Ico.png') no-repeat center;
 	width: 18px;
 	height: 12px;
 	margin-right: 10px;
 }
 .phone-info__ico {
-	display: block;
+	display: inline-block;
 	background: url('../img/Phone_Ico.png') no-repeat center;
 	width: 12px;
 	height: 12px;
@@ -117,12 +119,19 @@ main,
 }
 
 .head-bar {
+	/*position: fixed;
+	margin: 0 auto;
+	padding: 0 85px;
+	width: 100%;
+	background-color: #fff;*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 40px;
 	padding: 30px 0;
+
 }
+
 
 .head-bar__logo {
 	width: 118px;
@@ -138,10 +147,10 @@ main,
 	letter-spacing: 2.2px;
 }
 
-nav {
+.head-nav {
 	width: 80%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .head-bar__topnav {
 	 
@@ -289,7 +298,7 @@ nav {
 	bottom: -1px;
 }
 section {
-	margin-top: 120px;
+	margin-top: 100px;
 }
 
 .arrivals {
@@ -314,8 +323,7 @@ section {
 	display: flex;
 	justify-content: space-around;
     flex-wrap: wrap;
-	margin-top: 120px;
-	margin-bottom: 80px;
+	margin: 80px 0;
 }
 
 .arrivals-products__thing {
@@ -358,7 +366,8 @@ section {
 	display: none;
 }
 
-.arrivals-products__thing + .selected {
+.arrivals-products__thing + .selected,
+.arrivals-products__sale-cart + .sale__selected {
 	cursor: default;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
 }
@@ -404,11 +413,13 @@ section {
 	display: none;
 }
 
-.arrivals-products__block {
+.arrivals-products__block,
+.subscribe {
 	display: block;
 	background: #fff;
 	width: 100%;
 	padding: 26px 0;
+    margin-bottom: 120px
 }
 .arrivals-products__novigation{
 	cursor: pointer;
@@ -444,6 +455,7 @@ section {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	margin-bottom: 20px;
 }
 .arrivals-products__sale-cart > img {
 	width: 89px;
@@ -466,5 +478,126 @@ section {
 	color: #ff5912;
 	font-weight: 700;
 	font-size: 17px;
+}
+
+.add-cart {
+	display: none;
+}
+.add-cart > a > img {
+	display: inline-block;
+    position: relative;
+    top: 3px;
+    padding-right: 5px;
+}
+
+.sale__selected > .arrivals-products__sale-cart__info > .sale-cart__info__rate > img, 
+.sale__selected > .arrivals-products__sale-cart__info > .sale-cart__info__rate > p {
+	display: none;
+}
+
+.sale__selected > .arrivals-products__sale-cart__info > .sale-cart__info__rate > .add-cart {
+	display: block;
+}
+
+.subscribe__block {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 26px 50px;
+}
+
+.news-letter > h4{
+color: #ff5912;
+font-size: 18px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.news-letter > p{
+color: #34404b;
+font-size: 14px;
+font-style: italic;
+}
+
+.sub-form img {
+	margin-right: 10px;
+}
+
+.email-input {
+width: 250px;
+height: 30px;
+color: #7c8791;
+font-size: 14px;
+font-style: italic;
+border: 0;
+margin-right: 20px;
+}
+
+
+.button {
+	/* Style for "Button Bg" */
+width: 100px;
+height: 50px;
+background-color: #ff5912;
+border: 0;
+color: #ffffff;
+font-size: 14px;
+}
+
+
+footer {
+	width: 100%;
+	height: 250px;
+	background-color: #ffffff;
+}
+footer > .wrapper {
+	padding-top: 90px;
+	padding-bottom: 90px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.copyright__text {
+	padding-top: 30px;
+	color: #28313b;
+	font-size: 14px;
+	line-height: 30px;
+	width: 190px;
+}
+
+footer > .wrapper > .nav_footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 50%
+}
+footer li {
+	list-style-type: disc;
+}
+
+.payment h5{
+	margin-bottom: 20px;
+}
+.payment img {
+	width: 170px;
+	height: 19px;
+}
+
+	
+/*Smartphone*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.head-info__social {
+		margin-top: 10px;
+	}
+
+
 
 }
+
+/*Ipad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
+
+

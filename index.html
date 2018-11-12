@@ -10,8 +10,8 @@
 		<div class="head-info">
 
 			<div class="head-info__text">
-				<span class="mail-info__ico"></span><a href="mailto:info@shopy.com">info@shopy.com</a>
-				<span class="phone-info__ico"></span><a href="tel:+375333156043">+375-33- 315 - 6043</a>
+				<a href="mailto:info@shopy.com"><span class="mail-info__ico"></span>info@shopy.com</a>
+				<a href="tel:+375333156043"><span class="phone-info__ico"></span>+375-33-315-6043</a>
 			</div>
 
 			<div class="head-info__social">
@@ -20,13 +20,13 @@
 				<a href="#" class="head-info__twitter icons"><img src="img/twitter.png" alt="twitter"></a>
 			</div>
 		</div>
-
+		
 		<div class="head-bar">
 			<div class="head-bar__logo">
 				<a href="#"><img src="img/logo.png" alt="shoppy.by"></a>
 				<p class="head-bar__slogan">покупай у нас</p>
 			</div>
-			<nav>
+			<nav class="head-nav">
 				<div class="head-bar__topnav">
 					<a href="#">Главная</a>
 					<a href="#">Каталог</a>
@@ -43,7 +43,7 @@
 			</nav>
 
 		</div>
-
+		
 
 	</header>
 
@@ -148,12 +148,6 @@
 			</div>
 		</section>
 		
-		<section class="sale">
-			
-
-
-		</section>
-		
 		<section class="arrivals">
 			<h2><span>Лучшие</span> скидки</h2>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
@@ -164,6 +158,23 @@
 					<div class="arrivals-products__sale-cart__info">
 						<h5>Коричневая кожанка</h5>
 						<div class="sale-cart__info__rate">
+							<div class="add-cart">
+								<a href="#" class="icons"><img src="img/Add_To_Cart_Ico.png" alt="add_cart">добавить в корзину</a>
+							</div>
+							<img src="img/Rate.png" alt="">
+							<p class="arrivals-products__price">100$</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="arrivals-products__sale-cart sale__selected">
+					<img src="img/Product_Img.png" alt="poduct">
+					<div class="arrivals-products__sale-cart__info">
+						<h5>Коричневая кожанка</h5>
+						<div class="sale-cart__info__rate">
+							<div class="add-cart">
+								<a href="#" class="icons"><img src="img/Add_To_Cart_Ico.png" alt="add_cart">добавить в корзину</a>
+							</div>
 							<img src="img/Rate.png" alt="">
 							<p class="arrivals-products__price">100$</p>
 						</div>
@@ -175,17 +186,9 @@
 					<div class="arrivals-products__sale-cart__info">
 						<h5>Коричневая кожанка</h5>
 						<div class="sale-cart__info__rate">
-							<img src="img/Rate.png" alt="">
-							<p class="arrivals-products__price">100$</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="arrivals-products__sale-cart">
-					<img src="img/Product_Img.png" alt="poduct">
-					<div class="arrivals-products__sale-cart__info">
-						<h5>Коричневая кожанка</h5>
-						<div class="sale-cart__info__rate">
+							<div class="add-cart">
+								<a href="#" class="icons"><img src="img/Add_To_Cart_Ico.png" alt="add_cart">добавить в корзину</a>
+							</div>
 							<img src="img/Rate.png" alt="">
 							<p class="arrivals-products__price">100$</p>
 						</div>
@@ -198,7 +201,18 @@
 		</section>
 
 		<aside class="subscribe">
-			
+			<div class="subscribe__block">
+				<div class="news-letter">
+					<h4>Рассылка новостей</h4>
+					<p>подпишись на наши новости, что бы не пропустить горячие распродажи и новое поступление</p>
+				</div>
+				<form action="POST" class="sub-form">
+					<img src="img/Mail_Ico.png" alt="mail">
+					<input type="email" class="email-input" placeholder="введите вашу email почту">
+					<input type="button" value="подписаться" class="button">
+				</form>
+
+			</div>
 
 
 		</aside>
@@ -207,23 +221,37 @@
 
 
 	<footer>
-		<div class="copyright">
-			<div class="copyright__logo">
-				
+		<div class="wrapper">
+			<div class="copyright">
+				<div class="head-bar__logo">
+					<a href="#"><img src="img/logo.png" alt="shoppy.by"></a>
+					<p class="head-bar__slogan">покупай у нас</p>
+				</div>
+				<p class="copyright__text">Все права защищены.© 2015 </p>
 			</div>
-			<div class="copyright__text">
-				
+
+			<nav class="nav_footer">
+				<ul>
+					<a href="#"><li>о нас</li></a>
+					<a href="#"><li>контакты</li></a>
+					<a href="#"><li>поддержка</li></a>
+				</ul>
+				<ul>
+					<a href="#"><li>новости</li></a>
+					<a href="#"><li>юр. информация</li></a>
+					<a href="#"><li>политика конф-ти</li></a>
+				</ul>
+				<ul>
+					<a href="#"><li>подписаться</li></a>
+					<a href="#"><li>он-лайн помощь</li></a>
+				</ul>
+			</nav>
+
+			<div class="payment">
+				<h5>Методы оплаты</h5>
+				<img src="img/Payment_Images.png" alt="payment">
 			</div>
 		</div>
-
-		<nav class="footer">
-			
-		</nav>
-
-		<div class="payment">
-			
-		</div>
-
 	</footer>
 
 
