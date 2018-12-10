@@ -8,3 +8,17 @@ menu.onclick = function myFunction(){
 		x.className = "head-bar__topnav";
 	}
 }
+
+
+
+
+var sel = document.getElementById('myArrivals');﻿
+sel.onclick = function myFunction(){
+	var y = document.getElementById("ggg")
+
+	if(y.className === "arrivals-products__thing") {
+		y.className += " selected";
+	} else {
+		y.className = "arrivals-products__thing";
+	}
+}
